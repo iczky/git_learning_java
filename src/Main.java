@@ -88,8 +88,8 @@ public class Main {
                 "yyyy-MM-dd"
         );
 
-//        Date d1 = sdf.parse(start_date);
-//        Date d2 = sdf.parse(end_date);
+        Date d1 = sdf.parse(start_date);
+        Date d2 = sdf.parse(end_date);
 
 //      calculate to Milliseconds
         long difference_In_Time = d2.getTime() - d1.getTime();
@@ -97,16 +97,16 @@ public class Main {
         return TimeUnit.MILLISECONDS.toDays(difference_In_Time);
     }
 
-//    public static String getInitialName(String fullName) {
-//        String initials = "";
-//        String[] words = fullName.split("\\s+");
-//
-//        for (String word:words){
-//            if(!word.isEmpty()){
-//                initials += word.charAt(0);
-//            }
-//        }
-//        return initials.toUpperCase();
-//    }
-//
-//}
+    public static String getInitialName(String fullName) {
+        String initials = "";
+        String[] words = fullName.split("\\s+");
+
+        for (String word:words){
+            if(!word.isEmpty()){
+                initials += word.charAt(0);
+            }
+        }
+        return initials.toUpperCase();
+    }
+
+}
