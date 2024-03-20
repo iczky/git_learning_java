@@ -97,16 +97,16 @@ public class Main {
         return TimeUnit.MILLISECONDS.toDays(difference_In_Time);
     }
 
-    public static String getInitialName(String fullName) {
-        String initials = "";
-        String[] words = fullName.split("\\s+");
-
-        for (String word:words){
-            if(!word.isEmpty()){
-                initials += word.charAt(0);
-            }
-        }
-        return initials.toUpperCase();
-    }
-
-}
+//    public static String getInitialName(String fullName) {
+//        String initials = "";
+//        String[] words = fullName.split("\\s+");
+//
+//        for (String word:words){
+//            if(!word.isEmpty()){
+//                initials += word.charAt(0);
+//            }
+//        }
+//        return initials.toUpperCase();
+//    }
+//
+//}
